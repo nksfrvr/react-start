@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.ninja-list{
+  padding:1rem;
+}
+
+span{
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+span:hover{
+  color:red;
+  cursor: pointer;
+}
+
+.ninja{
+  padding: 1rem;
+}
+.ninja-title{
+  padding:2rem;
+}
+.App{
+  border:2px solid red;
+  border-radius:9px;
+  width:90vw;
+  margin: 1rem auto;
 }
