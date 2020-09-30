@@ -31,11 +31,36 @@ span:hover{
   padding: 1rem;
 }
 .ninja-title{
-  padding:2rem;
+  padding:1rem;
+  color:grey;
+}
+
+form{
+
+  padding:.3rem 2rem;
+}
+input{
+  display: block;
+  margin-bottom: 1rem;
+  outline: none;
 }
 .App{
   border:2px solid red;
   border-radius:9px;
   width:90vw;
   margin: 1rem auto;
+}
+
+button{
+  border:1px solid green;
+  border-radius: 10px;
+  color:green;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: .8rem;
+
+}
+button:hover{
+  background: green;
+  color:#fff;
 }

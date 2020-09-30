@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Ninjas from'./Ninjas';
+import AddNinja from './AddNinja';
 
 
 
@@ -10,13 +11,25 @@ class App extends Component{
       {name:'ryu', age : 44,belt:'brown', id:2},
       {name:'sonik', age :21,belt:'green', id:3},
       {name:'magic', age :100,belt:'green', id:4},
-
     ]
+  }
+  addNinja = (ninja)=>{
+    //set a random id for ninja
+    ninja.id = Math.random();
+    //creat a new array and adding the object to it via spread op.(...)
+    let ninjas = [...this.state.ninjas,ninja]
+    //setstate with new list
+    this.setState({
+      ninjas:ninjas
+    })
+    
+
   }
   render(){
     return(
       <div className= 'App'>
-        <h1 className='ninja-title'> The Ninja List</h1>
+
+        <AddNinja addNinja={this.addNinja}/>
         <Ninjas ninjas = {this.state.ninjas}/>
       </div>
     );
